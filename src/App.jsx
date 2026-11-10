@@ -5,6 +5,7 @@ import Lenis from 'lenis'
 import Loader from './components/Loader'
 import Header from './components/Header'
 import Cursor from './components/Cursor'
+import BotaoWhatsapp from './components/BotaoWhatsapp'
 import Hero from './sections/Hero'
 import Pista from './sections/Pista'
 import AlemDaPista from './sections/AlemDaPista'
@@ -73,6 +74,7 @@ export default function App() {
         <Contato />
       </main>
       <Rodape />
+      <BotaoWhatsapp />
     </>
   )
 }

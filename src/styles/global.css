@@ -1404,3 +1404,72 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .rodape-sociais svg .cheio, .rodape-sociais svg .fone { fill: currentColor; stroke: none; }
 a.impacto-placa { text-decoration: none; transition: box-shadow 0.4s; }
 a.impacto-placa:hover { box-shadow: 0 0 0 2px var(--neon), 0 30px 60px -20px rgba(0, 0, 0, 0.6); }
+
+/* ═══ Botão flutuante do WhatsApp ═══════════════════════════════════════ */
+.wa-flutuante {
+  --tam: 3.75rem;
+  --margem: 1.25rem;
+  position: fixed;
+  right: max(var(--margem), env(safe-area-inset-right));
+  bottom: max(var(--margem), calc(env(safe-area-inset-bottom) + 0.75rem));
+  z-index: 50; /* acima do conteúdo; abaixo do menu aberto (55), cabeçalho (60) e loader (100) */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transform: translateY(calc(var(--elevar, 0px) * -1));
+  transition: transform 0.6s var(--ease), opacity 0.6s;
+  opacity: 0;
+  pointer-events: none;
+}
+html.is-pronto .wa-flutuante { opacity: 1; pointer-events: auto; }
+.wa-flutuante-botao {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--tam);
+  height: var(--tam);
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.45), 0 4px 10px rgba(37, 211, 102, 0.35);
+  transition: transform 0.45s var(--ease), box-shadow 0.45s;
+}
+.wa-flutuante-botao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #25d366;
+  z-index: -1;
+  animation: wa-pulso 2.8s ease-out infinite;
+}
+@keyframes wa-pulso {
+  0% { transform: scale(1); opacity: 0.45; }
+  70%, 100% { transform: scale(1.55); opacity: 0; }
+}
+.wa-flutuante svg { width: 58%; height: 58%; }
+.wa-balao { fill: none; stroke: #fff; stroke-width: 2.2; stroke-linejoin: round; }
+.wa-fone { fill: #fff; }
+.wa-flutuante-dica {
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #0d0f0c;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: translateX(8px);
+  transition: opacity 0.35s, transform 0.45s var(--ease);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .wa-flutuante:hover .wa-flutuante-botao, .wa-flutuante:focus-visible .wa-flutuante-botao { transform: scale(1.08); box-shadow: 0 14px 32px -6px rgba(0, 0, 0, 0.5), 0 6px 14px rgba(37, 211, 102, 0.45); }
+  .wa-flutuante:hover .wa-flutuante-dica, .wa-flutuante:focus-visible .wa-flutuante-dica { opacity: 1; transform: none; }
+}
+.wa-flutuante:focus-visible { outline: none; }
+.wa-flutuante:focus-visible .wa-flutuante-botao { outline: 2px solid var(--neon); outline-offset: 3px; }
+@media (max-width: 899px) {
+  .wa-flutuante { --tam: 3.4rem; --margem: 1rem; }
+  .wa-flutuante-dica { display: none; }
+}
