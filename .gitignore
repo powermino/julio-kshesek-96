@@ -1,0 +1,19 @@
+# dependências e build (o GitHub gera o build sozinho)
+node_modules/
+dist/
+
+# Originais em alta resolução — ficam só neste computador.
+# O site usa as versões otimizadas em public/img/.
+/julio-com-capacete.jpeg
+/julio-sem-capacet.jpeg
+/julio_preto_e_branco.png
+/public/bastidores/
+/public/caminhao/
+/public/fotos-julio-premium/
+/public/Logos/
+/public/Logos parceiros/
+
+# sistema
+.DS_Store
+Thumbs.db
+*.log

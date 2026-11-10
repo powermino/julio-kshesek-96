@@ -1,0 +1,514 @@
+{
+ "/img/caminhao/caminhao-corrida-96": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 640,
+    "kb": 49
+   },
+   {
+    "w": 1280,
+    "kb": 185
+   },
+   {
+    "w": 2048,
+    "kb": 516
+   }
+  ]
+ },
+ "/img/caminhao/caminhao-frente-96": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 640,
+    "kb": 70
+   },
+   {
+    "w": 1280,
+    "kb": 311
+   },
+   {
+    "w": 2048,
+    "kb": 804
+   }
+  ]
+ },
+ "/img/caminhao/caminhao-lateral-96": {
+  "w": 2047,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 640,
+    "kb": 53
+   },
+   {
+    "w": 1280,
+    "kb": 202
+   },
+   {
+    "w": 2047,
+    "kb": 540
+   }
+  ]
+ },
+ "/img/caminhao/caminhao-traseira-96": {
+  "w": 2047,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 640,
+    "kb": 62
+   },
+   {
+    "w": 1280,
+    "kb": 243
+   },
+   {
+    "w": 2047,
+    "kb": 653
+   }
+  ]
+ },
+ "/img/bastidores/julio-caminhao-box-cascavel": {
+  "w": 1200,
+  "h": 1600,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 55
+   },
+   {
+    "w": 960,
+    "kb": 213
+   },
+   {
+    "w": 1200,
+    "kb": 311
+   }
+  ]
+ },
+ "/img/bastidores/julio-celebracao-caminhao": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 33
+   },
+   {
+    "w": 960,
+    "kb": 93
+   },
+   {
+    "w": 1600,
+    "kb": 252
+   }
+  ]
+ },
+ "/img/bastidores/julio-comunicacao-boxes": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 11
+   },
+   {
+    "w": 960,
+    "kb": 32
+   },
+   {
+    "w": 1600,
+    "kb": 73
+   }
+  ]
+ },
+ "/img/bastidores/julio-convidados-evento": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 23
+   },
+   {
+    "w": 960,
+    "kb": 65
+   },
+   {
+    "w": 1600,
+    "kb": 198
+   }
+  ]
+ },
+ "/img/bastidores/julio-criancas-fas": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 40
+   },
+   {
+    "w": 960,
+    "kb": 120
+   },
+   {
+    "w": 1600,
+    "kb": 249
+   }
+  ]
+ },
+ "/img/bastidores/julio-encontro-pilotos": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 19
+   },
+   {
+    "w": 960,
+    "kb": 54
+   },
+   {
+    "w": 1600,
+    "kb": 124
+   }
+  ]
+ },
+ "/img/bastidores/julio-momento-familia": {
+  "w": 1365,
+  "h": 2048,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 63
+   },
+   {
+    "w": 960,
+    "kb": 171
+   },
+   {
+    "w": 1365,
+    "kb": 285
+   }
+  ]
+ },
+ "/img/bastidores/julio-parceiros-formula-truck": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 37
+   },
+   {
+    "w": 960,
+    "kb": 99
+   },
+   {
+    "w": 1600,
+    "kb": 187
+   }
+  ]
+ },
+ "/img/bastidores/julio-piloto-paddock": {
+  "w": 1365,
+  "h": 2048,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 72
+   },
+   {
+    "w": 960,
+    "kb": 223
+   },
+   {
+    "w": 1365,
+    "kb": 401
+   }
+  ]
+ },
+ "/img/bastidores/julio-podio-trofeu": {
+  "w": 1365,
+  "h": 2048,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 47
+   },
+   {
+    "w": 960,
+    "kb": 127
+   },
+   {
+    "w": 1365,
+    "kb": 225
+   }
+  ]
+ },
+ "/img/bastidores/julio-relacionamento-equipe": {
+  "w": 2048,
+  "h": 1365,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 27
+   },
+   {
+    "w": 960,
+    "kb": 78
+   },
+   {
+    "w": 1600,
+    "kb": 169
+   }
+  ]
+ },
+ "/img/bastidores/julio-visao-cockpit": {
+  "w": 900,
+  "h": 1600,
+  "saidas": [
+   {
+    "w": 480,
+    "kb": 44
+   },
+   {
+    "w": 900,
+    "kb": 119
+   }
+  ]
+ },
+ "/img/hero/julio-sem-capacete": {
+  "w": 1856,
+  "h": 2304,
+  "saidas": [
+   {
+    "w": 1856,
+    "kb": 426
+   }
+  ]
+ },
+ "/img/hero/julio-com-capacete": {
+  "w": 1856,
+  "h": 2304,
+  "saidas": [
+   {
+    "w": 1856,
+    "kb": 466
+   }
+  ]
+ },
+ "/img/premium/duelo-capacete": {
+  "w": 960,
+  "h": 822,
+  "saidas": [
+   {
+    "w": 560,
+    "kb": 35
+   },
+   {
+    "w": 960,
+    "kb": 67
+   }
+  ]
+ },
+ "/img/premium/duelo-bone": {
+  "w": 960,
+  "h": 822,
+  "saidas": [
+   {
+    "w": 560,
+    "kb": 29
+   },
+   {
+    "w": 960,
+    "kb": 64
+   }
+  ]
+ },
+ "/img/premium/pose-capacete": {
+  "w": 1830,
+  "h": 768,
+  "saidas": [
+   {
+    "w": 960,
+    "kb": 30
+   },
+   {
+    "w": 1600,
+    "kb": 65
+   },
+   {
+    "w": 1830,
+    "kb": 78
+   }
+  ]
+ },
+ "/img/premium/pose-recorte": {
+  "w": 856,
+  "h": 760,
+  "saidas": [
+   {
+    "w": 640,
+    "kb": 68
+   },
+   {
+    "w": 856,
+    "kb": 93
+   }
+  ]
+ },
+ "/img/premium/retrato-capacete": {
+  "w": 1882,
+  "h": 836,
+  "saidas": [
+   {
+    "w": 960,
+    "kb": 52
+   },
+   {
+    "w": 1600,
+    "kb": 102
+   },
+   {
+    "w": 1882,
+    "kb": 126
+   }
+  ]
+ },
+ "/img/logos/instagram": {
+  "w": 220,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 220,
+    "kb": 8
+   }
+  ]
+ },
+ "/img/logos/youtube": {
+  "w": 729,
+  "h": 166,
+  "saidas": [
+   {
+    "w": 729,
+    "kb": 11
+   }
+  ]
+ },
+ "/img/logos/bandsports": {
+  "w": 198,
+  "h": 88,
+  "saidas": [
+   {
+    "w": 198,
+    "kb": 8
+   }
+  ]
+ },
+ "/img/logos/formula-truck": {
+  "w": 171,
+  "h": 52,
+  "saidas": [
+   {
+    "w": 171,
+    "kb": 4
+   }
+  ]
+ },
+ "/img/logos/neat-automoveis": {
+  "w": 654,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 654,
+    "kb": 15
+   }
+  ]
+ },
+ "/img/logos/trentini": {
+  "w": 676,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 676,
+    "kb": 57
+   }
+  ]
+ },
+ "/img/logos/ks-oficina": {
+  "w": 969,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 969,
+    "kb": 71
+   }
+  ]
+ },
+ "/img/logos/sabor-fit": {
+  "w": 189,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 189,
+    "kb": 17
+   }
+  ]
+ },
+ "/img/logos/bw-football-club": {
+  "w": 436,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 436,
+    "kb": 18
+   }
+  ]
+ },
+ "/img/logos/blind-auto-vidros": {
+  "w": 952,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 952,
+    "kb": 27
+   }
+  ]
+ },
+ "/img/logos/passaura-locacoes": {
+  "w": 594,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 594,
+    "kb": 37
+   }
+  ]
+ },
+ "/img/logos/mr-estetica": {
+  "w": 385,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 385,
+    "kb": 17
+   }
+  ]
+ },
+ "/img/logos/tekne-car": {
+  "w": 1021,
+  "h": 220,
+  "saidas": [
+   {
+    "w": 1021,
+    "kb": 70
+   }
+  ]
+ }
+}
