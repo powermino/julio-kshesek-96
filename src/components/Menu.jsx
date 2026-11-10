@@ -62,7 +62,7 @@ export default function Menu({ aberto, irPara }) {
         <span>{site.categoria} · #{site.numero}</span>
         <div className="menu-redes">
           {site.redes.map((r) => (
-            <a key={r.nome} href={r.url} tabIndex={aberto ? 0 : -1}>{r.nome}</a>
+            <a key={r.nome} href={r.url} target={r.externo ? '_blank' : undefined} rel={r.externo ? 'noopener noreferrer' : undefined} tabIndex={aberto ? 0 : -1}>{r.nome}</a>
           ))}
         </div>
       </div>

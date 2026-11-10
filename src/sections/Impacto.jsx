@@ -3,6 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Logo from '../components/Logo'
 import { site } from '../config/site'
+import { externo } from '../lib/acoes'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -196,7 +197,9 @@ function Digital() {
         {meta.plataformas.map((p, i) => (
           <article className={`plataforma plataforma--${i ? 'secundaria' : 'principal'}`} key={p.nome}>
             <header>
-              <Logo src={p.logo} nome={p.nome} className="plataforma-logo" />
+              {p.nome === 'Instagram'
+                ? <a {...externo(site.instagram)} aria-label="Instagram oficial de Júlio Kshesek (abre em nova aba)" data-cursor="link"><Logo src={p.logo} nome={p.nome} className="plataforma-logo" /></a>
+                : <Logo src={p.logo} nome={p.nome} className="plataforma-logo" />}
               <span>{((p.visualizacoes / total) * 100).toLocaleString('pt-BR', { maximumFractionDigits: 0 })}% das visualizações</span>
             </header>
             <Contador valor={p.visualizacoes} />
@@ -340,7 +343,7 @@ export default function Impacto() {
           <span className="impacto-centro-rotulo">Campeonato</span>
           <Logo src={ft.src} nome={ft.nome} className="impacto-logo-ft" />
         </div>
-        <div className="impacto-placa impacto-placa--ig"><Logo src={plaIg.src} nome={plaIg.nome} /><span>{plaIg.nome}</span></div>
+        <a className="impacto-placa impacto-placa--ig" {...externo(site.instagram)} aria-label="Instagram oficial de Júlio Kshesek (abre em nova aba)" data-cursor="link"><Logo src={plaIg.src} nome={plaIg.nome} /><span>@juliokshesek96</span></a>
         <div className="impacto-placa impacto-placa--yt"><Logo src={plaYt.src} nome={plaYt.nome} /><span>{plaYt.nome}</span></div>
         <div className="impacto-placa impacto-placa--band"><Logo src={plaBand.src} nome={plaBand.nome} /><span>Transmissão</span></div>
       </div>
@@ -360,7 +363,7 @@ export default function Impacto() {
           <article className="painel painel--largo">
             <header className="painel-topo">
               <span className="painel-n">T-01</span>
-              <Logo src={plaIg.src} nome="Instagram" className="painel-logo" />
+              <a {...externo(site.instagram)} aria-label="Instagram oficial de Júlio Kshesek (abre em nova aba)" data-cursor="link"><Logo src={plaIg.src} nome="Instagram" className="painel-logo" /></a>
               <Selo status={ig.status} />
             </header>
             <h3 className="painel-titulo">Conexão digital</h3>

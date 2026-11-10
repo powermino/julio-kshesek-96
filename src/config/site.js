@@ -1,12 +1,18 @@
 /**
  * Configuração central do site. Tudo marcado com [ ] é PROVISÓRIO.
  */
+// Canais oficiais
+const INSTAGRAM = 'https://www.instagram.com/juliokshesek96/'
+const WHATSAPP = '554196401478' // só dígitos (wa.me)
+const MENSAGEM_WA = 'Olá, Júlio! Conheci seu site e gostaria de saber mais sobre as oportunidades de patrocínio e parceria.'
+
 export const site = {
   nome: 'Júlio Kshesek',
   primeiroNome: 'Júlio',
   sobrenome: 'Kshesek',
   numero: '96',
   categoria: 'Fórmula Truck',
+  instagram: INSTAGRAM,
 
   hero: {
     // O primeiro arquivo que existir em /public é usado (WebP otimizado primeiro; originais como reserva).
@@ -37,16 +43,15 @@ export const site = {
   },
 
   contato: {
-    whatsapp: '', // só dígitos, ex.: 5551999998888
-    mensagemWhatsapp: 'Olá! Conheci o projeto do Júlio #96 pelo site e gostaria de receber informações sobre as oportunidades de patrocínio.',
+    whatsapp: WHATSAPP, // +55 41 9640-1478
+    telefone: '+55 41 9640-1478',
+    mensagemWhatsapp: MENSAGEM_WA,
     email: '', // e-mail que recebe o formulário
   },
 
   redes: [
-    { nome: 'Instagram', url: '#' },
-    { nome: 'YouTube', url: '#' },
-    { nome: 'TikTok', url: '#' },
-    { nome: 'Facebook', url: '#' },
+    { nome: 'Instagram', url: INSTAGRAM, externo: true },
+    { nome: 'WhatsApp', url: `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(MENSAGEM_WA)}`, externo: true },
   ],
 
   menu: [

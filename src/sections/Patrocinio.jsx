@@ -3,6 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Foto from '../components/Foto'
 import { site } from '../config/site'
+import { propsComercial } from '../lib/acoes'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -124,7 +125,7 @@ export default function Patrocinio() {
           <p className="patro-sub">
             Conecte sua empresa à emoção, à velocidade e à comunidade do automobilismo ao lado de {site.nome} #{site.numero}.
           </p>
-          <a href="#contato" className="botao" onClick={(e) => { e.preventDefault(); ir('#contato', 'Patrocínio') }} data-cursor="link">
+          <a className="botao" {...propsComercial()} data-cursor="link">
             Quero ser patrocinador <i aria-hidden="true">↗</i>
           </a>
         </div>
@@ -151,7 +152,7 @@ export default function Patrocinio() {
           ))}
         </div>
         <div className="beneficios-acao">
-          <a href="#contato" className="botao botao--grande" onClick={(e) => { e.preventDefault(); ir('#contato', 'Patrocínio') }} data-cursor="link">
+          <a className="botao botao--grande" {...propsComercial()} data-cursor="link">
             Quero patrocinar o Júlio <i aria-hidden="true">↗</i>
           </a>
           <p>Cotas, formatos e contrapartidas são definidos em proposta. Inserções na transmissão de TV não fazem parte das cotas sem confirmação contratual.</p>

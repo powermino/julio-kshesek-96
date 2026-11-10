@@ -12,6 +12,16 @@ export function linkWhatsapp(texto = site.contato.mensagemWhatsapp) {
   return n ? `https://wa.me/${n}?text=${encodeURIComponent(texto)}` : null
 }
 
+/** Props de <a> para chamadas comerciais: WhatsApp em nova aba; sem número, vai ao formulário. */
+export function propsComercial(assunto = 'Patrocínio') {
+  const url = linkWhatsapp()
+  if (url) return { href: url, target: '_blank', rel: 'noopener noreferrer' }
+  return { href: '#contato', onClick: (e) => { e.preventDefault(); irPara('#contato', assunto) } }
+}
+
+/** Props de <a> para links externos (nova aba). */
+export const externo = (href) => ({ href, target: '_blank', rel: 'noopener noreferrer' })
+
 /**
  * "Seja um patrocinador": abre o WhatsApp comercial já com a mensagem.
  * Sem número configurado, leva ao formulário de contato com o assunto "Patrocínio".

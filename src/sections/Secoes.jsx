@@ -205,7 +205,15 @@ export function Rodape() {
         </div>
         <div>
           <p className="rotulo">Redes</p>
-          {site.redes.map((r) => <a key={r.nome} href={r.url}>{r.nome}</a>)}
+          {site.redes.map((r) => <a key={r.nome} href={r.url} target={r.externo ? '_blank' : undefined} rel={r.externo ? 'noopener noreferrer' : undefined}>{r.nome}</a>)}
+          <div className="rodape-sociais">
+            <a href={site.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial (abre em nova aba)" data-cursor="link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4.2" /><circle className="cheio" cx="17.4" cy="6.6" r="1.1" /></svg>
+            </a>
+            <a href={site.redes.find((r) => r.nome === 'WhatsApp').url} target="_blank" rel="noopener noreferrer" aria-label={`WhatsApp comercial ${site.contato.telefone} (abre em nova aba)`} data-cursor="link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.2 19.8l1.1-3.9A8.5 8.5 0 1 1 8.4 19z" /><path className="fone" d="M9 8.2c.3-.6.6-.6.9-.6h.6c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1 1.4 1.8 2.5 2.4.2.1.4.1.5-.1l.6-.7c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .5-.2 1.1-.7 1.4-.6.4-1.5.6-2.6.2-2.2-.8-4.1-2.6-5-4.8-.4-1.1-.2-2.1.1-2.6z" /></svg>
+            </a>
+          </div>
         </div>
         <div className="rodape-slogan">
           <p className="rotulo">#{site.numero}</p>

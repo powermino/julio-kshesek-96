@@ -5,7 +5,7 @@ import Foto from '../components/Foto'
 import Logo from '../components/Logo'
 import Topografia from '../components/Topografia'
 import { site } from '../config/site'
-import { irPara, linkWhatsapp, sejaPatrocinador } from '../lib/acoes'
+import { linkWhatsapp, propsComercial, sejaPatrocinador } from '../lib/acoes'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -69,8 +69,7 @@ export default function Encerramento() {
             target={wa ? '_blank' : undefined} rel={wa ? 'noopener noreferrer' : undefined} data-cursor="link">
             Seja um patrocinador <i aria-hidden="true">↗</i>
           </a>
-          <a className="botao botao--contorno botao--grande" href="#contato" data-cursor="link"
-            onClick={(e) => { e.preventDefault(); irPara('#contato', 'Proposta comercial') }}>
+          <a className="botao botao--contorno botao--grande" {...propsComercial('Proposta comercial')} data-cursor="link">
             Receber proposta comercial <i aria-hidden="true">→</i>
           </a>
         </div>
